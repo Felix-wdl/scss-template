@@ -6,7 +6,7 @@ module.exports = {
 		port: 8080,
 		proxy: {
 			"/api": {
-				target: "接口地址",
+				target: "http://127.0.0.1:8888", //接口地址
 				ws: false,
 				changeOrigin: true //是否跨域
 			}

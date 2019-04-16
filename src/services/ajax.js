@@ -23,7 +23,6 @@ axios.interceptors.response.use(response => {
     // });
     return response;
 }, error => {
-    console.log(error)
     return Promise.resolve(error.response)
 });
 
@@ -37,8 +36,6 @@ export default {
             headers: {
                 'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json;charset=utf-8;',
-                'data': '2&4.0.1&black&xxhdpi&zh&aaa_a&53496937f5bc02807d3934ac9fcf5ac9',
-                'platform': 'wap',
                 'token': TOKEN
             },
             data: JSON.stringify(data),
